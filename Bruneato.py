@@ -166,15 +166,15 @@ if __name__=="__main__":
 			if id == 50: 
 				#segue
 				if x< -20:
-					roda = Twist(Vector3(0.1, 0, 0), Vector3(0,0, 0.2))
+					roda = Twist(Vector3(z*0.001, 0, 0), Vector3(0,0, x*0.002))
 					velocidade.publish(roda)
 
 				elif x > 20:
-					roda = Twist(Vector3(0.1, 0, 0), Vector3(0,0, -0.2))
+					roda = Twist(Vector3(z*0.001, 0, 0), Vector3(0,0, x*-0.002))
 					velocidade.publish(roda)
 
 				elif x >= -20 and x <= 20:
-					roda = Twist(Vector3(0.1, 0, 0), Vector3(0,0, 0))
+					roda = Twist(Vector3(z*0.001, 0, 0), Vector3(0,0, 0))
 					velocidade.publish(roda)
 					if z <= 70:
 						roda = Twist(Vector3(0, 0, 0), Vector3(0,0, 0))
@@ -183,15 +183,15 @@ if __name__=="__main__":
 			elif id ==100:
 				#andar um metro pra tras e parar
 				if x< -20:
-					roda = Twist(Vector3(0.1, 0, 0), Vector3(0,0, 0.2))
+					roda = Twist(Vector3(z*0.001, 0, 0), Vector3(0,0, x*0.002))
 					velocidade.publish(roda)
 
 				elif x > 20:
-					roda = Twist(Vector3(0.1, 0, 0), Vector3(0,0, -0.2))
+					roda = Twist(Vector3(z*0.001, 0, 0), Vector3(0,0, x*-0.002))
 					velocidade.publish(roda)
 
 				elif x >= -20 and x <= 20:
-					roda = Twist(Vector3(0.1, 0, 0), Vector3(0,0, 0))
+					roda = Twist(Vector3(z*0.001, 0, 0), Vector3(0,0, 0))
 					velocidade.publish(roda)
 					if z <= 100:
 
@@ -200,15 +200,15 @@ if __name__=="__main__":
 
 			elif id ==150:
 				if x< -20:
-					roda = Twist(Vector3(0.1, 0, 0), Vector3(0,0, 0.2))
+					roda = Twist(Vector3(z*0.001, 0, 0), Vector3(0,0, x*0.002))
 					velocidade.publish(roda)
 
 				elif x > 20:
-					roda = Twist(Vector3(0.1, 0, 0), Vector3(0,0, -0.2))
+					roda = Twist(Vector3(z*0.001, 0, 0), Vector3(0,0, x*-0.002))
 					velocidade.publish(roda)
 
 				elif x >= -20 and x <= 20:
-					roda = Twist(Vector3(0.1, 0, 0), Vector3(0,0, 0))
+					roda = Twist(Vector3(z*0.001, 0, 0), Vector3(0,0, 0))
 					velocidade.publish(roda)
 					if z <= 100:
 						roda = Twist(Vector3(0, 0, 0), Vector3(0,0, 0))
